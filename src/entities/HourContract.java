@@ -7,7 +7,7 @@ public class HourContract {
 	private Date date;
 	private double valuePerHour;
 	private Integer hours;
-	
+
 	public HourContract() {
 	}
 
@@ -39,5 +39,9 @@ public class HourContract {
 
 	public void setHours(Integer hours) {
 		this.hours = hours;
+	}
+
+	public double totalValue() {
+		return valuePerHour * hours;
 	}
 }
