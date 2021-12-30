@@ -1,5 +1,7 @@
 package entities;
 
+import java.util.List;
+
 import entities.enums.WorkerLevel;
 
 public class Worker {
@@ -10,5 +12,5 @@ public class Worker {
 	
 	private	Department department;
 	
-	
+	private List<HourContract> contracts;
 }
